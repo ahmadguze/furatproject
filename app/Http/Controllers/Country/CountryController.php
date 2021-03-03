@@ -10,7 +10,7 @@ use App\Models\CountryModel;
 class CountryController extends Controller
 {
     public function country(){
-        return response()->json("CountryModel::all()",200);
+        return response()->json(CountryModel::get(),200);
         
     }
 }
